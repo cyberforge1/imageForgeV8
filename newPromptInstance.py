@@ -13,12 +13,9 @@ prompt_model.save()
 
 prompt_id = prompt_model.prompt_id
 
-print(prompt_id)
 
+# Created to fetch the image prompt text that is displayed on the webpage
 last_prompt_id = prompt_id - 1
-
-print(last_prompt_id)
 
 prompt_instance = Prompt.objects.get(prompt_id=last_prompt_id).text_field
 
-print(prompt_instance)
